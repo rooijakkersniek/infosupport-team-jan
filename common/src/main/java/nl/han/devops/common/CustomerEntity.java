@@ -1,11 +1,12 @@
-package nl.han.devops.domain;
+package nl.han.devops.common;
 
-import nl.han.devops.Entity;
+import jakarta.persistence.Entity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerEntity extends Entity implements ICustomerAggregate {
+@Entity
+public class CustomerEntity implements ICustomerAggregate {
 
     public CustomerEntity(String name, String address, String phoneNumber, String email) {
         this.name = name;
