@@ -1,0 +1,10 @@
+version: "1.0.0"
+services:
+  planning-service:
+    build: ./planning-service
+    ports:
+      - "8081:8080"
+  registry-service:
+    build: ./registry-service
+    ports:
+      - "8082:8080"
