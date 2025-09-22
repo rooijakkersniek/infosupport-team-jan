@@ -1,6 +1,7 @@
 package nl.han.devops.common;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class VehicleEntity implements IVehicleAggregate {
@@ -11,7 +12,7 @@ public class VehicleEntity implements IVehicleAggregate {
         this.model = model;
     }
 
-    private String kenteken;
+    @Id private String kenteken;
     private String merk;
     private String model;
 }

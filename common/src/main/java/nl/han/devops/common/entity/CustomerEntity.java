@@ -1,6 +1,7 @@
 package nl.han.devops.common;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,9 +42,10 @@ public class CustomerEntity implements ICustomerAggregate {
         vehicles.add(vehicle);
     }
 
+
     private String name;
     private String address;
     private String phoneNumber;
-    private String email;
+    @Id private String email;
     private List<IVehicleAggregate> vehicles;
 }
