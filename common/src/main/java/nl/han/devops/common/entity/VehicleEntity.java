@@ -1,7 +1,8 @@
-package nl.han.devops.common;
+package nl.han.devops.common.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import nl.han.devops.common.aggregate.IVehicleAggregate;
 
 @Entity
 public class VehicleEntity implements IVehicleAggregate {
